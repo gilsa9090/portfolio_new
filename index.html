@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+      body {
+        background-color: #e6eff4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 py-4"
+      >
+        <div class="text-2xl hidden md:block lg:block font-bold text-primary">
+          My Portfolio
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="#home" class="text-base text-dark hover:text-primary"
+            >Home</a
+          >
+          <a href="#about" class="text-base text-dark hover:text-primary"
+            >About</a
+          >
+          <a href="#portfolio" class="text-base text-dark hover:text-primary"
+            >Portfolio</a
+          >
+          <a href="#contact" class="text-base text-dark hover:text-primary"
+            >Contact</a
+          >
+        </div>
+        <div class="lg:hidden">
+          <button id="navbar-toggle" class="text-dark focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="navbar-menu" class="hidden lg:hidden">
+        <a
+          href="#home"
+          class="block px-4 py-2 text-dark hover:bg-primary hover:text-white"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 text-dark hover:bg-primary hover:text-white"
+          >About</a
+        >
+        <a
+          href="#portfolio"
+          class="block px-4 py-2 text-dark hover:bg-primary hover:text-white"
+          >Portfolio</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-dark hover:bg-primary hover:text-white"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!--Home -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="self-center w-full px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hi There. I'm
+              <span class="block font-bold text-dark text-4xl lg:text-5xl"
+                >Gilang Sadewa</span
+              >
+            </h1>
+            <h2 class="mt-2 font-medium text-slate-500 text-lg mb-5">
+              Junior Web Developer
+            </h2>
+            <p class="text-base text-slate-400 leading-relaxed mb-10">
+              Let's Make an Interesting Project with Me.
+              <span class="block font-bold text-slate-600">Hit Me Up!</span>
+            </p>
+            <a
+              href=""
+              class="bg-primary py-3 px-8 text-white rounded-full hover:shadow-lg hover:opacity-70 duration-300 transition ease-in-out"
+              >Contact Me</a
+            >
+          </div>
+          <div class="self-end w-full px-4 lg:w-1/2">
+            <div class="mt-10 relative lg:mt-6 lg:right-0">
+              <img
+                src="/src/avatar.png"
+                class="max-w-full mx-auto hidden lg:block"
+                alt=""
+              />
+              <span
+                class="absolute bottom-8 hidden lg:block -z-10 left-1/2 -translate-x-1/2 md:scale-125"
+                ><svg
+                  viewBox="0 0 200 200"
+                  width="350"
+                  height="300"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#f59e0b"
+                    d="M43.3,-9.9C52.2,13.5,53,43.8,35.1,59.4C17.2,75,-19.4,76.1,-43.8,58.7C-68.2,41.4,-80.4,5.7,-71,-18.2C-61.7,-42.1,-30.8,-54.2,-6.8,-52C17.2,-49.7,34.3,-33.2,43.3,-9.9Z"
+                    transform="translate(100 100) scale(1.1)"
+                  /></svg
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of Home-->
+
+    <!--About -->
+    <section id="about" class="pt-20 pb-10">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold text-primary text-xl mb-3 uppercase">
+              About Me
+            </h4>
+            <p class="text-slate-500 text-semibold max-w-md justify-end">
+              Highly motivated web and mobile development enthusiast with
+              extensive experience in various IT projects, particularly in
+              website development. Strong problem-solving skills and proficient
+              in debugging to ensure optimal application performance. Skilled in
+              graphic design using Photoshop and CorelDraw. Fluent in English.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h2 class="font-bold text-primary text-xl mb-3 uppercase">
+              Contact Me
+            </h2>
+            <p class="text-slate-500 text-semibold max-w-md justify-end">
+              Let's connect with me and make some nice idea become a real
+            </p>
+            <div class="flex items-center mt-4">
+              <!-- Social Media Links -->
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=gilangsadewa600@gmail.com"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/gilang-dwi-probowiyanto-62649524b/"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.546C0 23.226.792 24 1.771 24h20.451c.978 0 1.777-.774 1.777-1.727V1.727C24 .774 23.203 0 22.225 0z"
+                  /></svg
+              ></a>
+              <a
+                href="https://github.com/gilsa9090?tab=repositories"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.809 1.304 3.495.997.107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.467-2.382 1.235-3.221-.135-.304-.54-1.527.105-3.176 0 0 1.005-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.28-1.552 3.282-1.23 3.282-1.23.653 1.649.24 2.872.117 3.176.765.839 1.231 1.911 1.231 3.221 0 4.609-2.807 5.62-5.479 5.914.43.372.823 1.096.823 2.213 0 1.597-.015 2.884-.015 3.276 0 .322.216.698.825.578C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/gilsa.7/"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  /></svg
+              ></a>
+              <a
+                href="https://wa.me/6287824786327"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of About-->
+    <!--Skill-->
+    <section id="skill" class="pt-10 pb-12 bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold text-4xl text-primary mb-2">Skills</h4>
+            <h2 class="font-thin text-lg text-slate-300">
+              Skill for support your project
+            </h2>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="#"
+              class="max-w-[120px] mx-3 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img src="./src/laravel8530-removebg-preview.png" alt=""
+            /></a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-1 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img width="500" height="100" src="./src/node.png" alt=""
+            /></a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-1 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img width="500" height="100" src="./src/dart.png" alt=""
+            /></a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-1 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img width="500" height="100" src="./src/flutter.png" alt=""
+            /></a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-1 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img
+                width="500"
+                height="100"
+                src="./src/JavaScript-logo.png"
+                alt=""
+            /></a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-1 py-1 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              ><img
+                width="500"
+                height="100"
+                src="./src/651_codeigniter-removebg-preview.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Skill-->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="pt-20 pb-32">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-center text-primary mb-10">
+          My Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Item 1 -->
+          <div class="relative group">
+            <img
+              src="./src/transaksi.jpg"
+              alt="Aplikasi Transaksi Laundry"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Aplikasi Transaksi Laundry
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal1')"
+            ></button>
+          </div>
+          <!-- Project Item 2 -->
+          <div class="relative group">
+            <img
+              src="./src/aquatic.png"
+              alt="Web Penjualan Ikan Predator"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Web Penjualan Ikan Predator
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal2')"
+            ></button>
+          </div>
+          <!-- Project Item 3 -->
+          <div class="relative group">
+            <img
+              src="./src/hardware.png"
+              alt="Web Peminjaman Alat"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Web Peminjaman Alat
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal3')"
+            ></button>
+          </div>
+          <!-- Project Item 4 -->
+          <div class="relative group">
+            <img
+              src="./src/TPQ.png"
+              alt="Project 4"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Website Pengelolah Madrasah
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal4')"
+            ></button>
+          </div>
+          <!-- Project Item 5 -->
+          <div class="relative group">
+            <img
+              src="./src/undangan.jpg"
+              alt="Project 5"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Web Pembuatan Undangan Online
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal5')"
+            ></button>
+          </div>
+          <!-- Project Item 6 -->
+          <div class="relative group">
+            <img
+              src="./src/loretto.png"
+              alt="Project 6"
+              class="w-full h-full object-cover rounded-lg shadow-md"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center"
+            >
+              <p class="text-white text-lg font-semibold">
+                Website Management Merchandise
+              </p>
+            </div>
+            <button
+              class="absolute inset-0"
+              onclick="openModal('modal6')"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Projects -->
+    <div
+      id="modal1"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal1')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">SmartWhoosh</h3>
+          <p>
+            Adalah sebuah aplikasi transaksi laundry yang berkolaborasi dengan
+            timbangan IoT. aplikasi ini bisa melakukan transaksi secara cepat
+            dan efisien karena bisa melakukan kalkulasi harga dan berat secara
+            otomatis dan realtime. aplikasi ini dibuat menggunakan flutter dan
+            express js
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal1')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal2"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal2')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">Maskurrouf Aquatic</h3>
+          <p>
+            adalah website management penjualan ikan predator yang berguna untuk
+            melakukan penjualan ikan hingga melakukan rekap data penjualan
+            secara online. website ini dibangun menggunakan Laravel 9 dan MySQL
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal2')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal3"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal3')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">Labs. Website</h3>
+          <p>
+            adalah sebuah website peminjaman alat lab hardware yang berguna
+            untuk melakukan maintain pada sebuah lab hardware agar bisa
+            melakukan optane secara teratur. website ini dibangun menggunakan
+            Codeigniter 3 dan MySQL
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal3')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal4"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal4')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">Website Madrasah</h3>
+          <p>
+            Website ini dibangun menggunakan Codeigniter 3 yang berguna untuk
+            memanage data para siswa dan guru pada madrasah
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal4')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal5"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal5')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">YuhNikah Website</h3>
+          <p>
+            adalah Website pembuatan undangan online yang mana dibuat
+            menggunakan SQL, PHP, Codeigniter 3, dan JQuery. projek ini
+            memungkinkan pelanggan untuk mencustomisasi undangan online mereka
+            berdasarkan template yang sudah tersedia
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal5')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal6"
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50"
+        onclick="closeModal('modal6')"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-lg overflow-hidden w-11/12 md:max-w-2xl z-10"
+      >
+        <div class="px-6 py-4">
+          <h3 class="text-xl font-bold mb-4">Website Loretto</h3>
+          <p>
+            LORETO PROMOTION adalah perusahaan yang bergerak dibidang penyedia
+            promotional merchandise dan corporate gift kami berdiri sejak tahun
+            2017 sudah melayani lebih dari 1300 perusahaan besar BUMN dan
+            instansi pemerintah, kami menawarkan ribuan pilihan produk kreatif
+            dan inovatif berkualitas yang dapat disesuaikan dengan kebutuhan
+            promosi anda. proses order yang mudah dan singkat serta jaringan
+            pengiriman yang luas telah menjadikan kami sebagai teman terpercaya
+            untuk promotional merchandise dan corporate gift di Indonesia. kami
+            akan terus bergerak bersama karya-karya kreatif anak bangsa..
+          </p>
+          <button
+            class="mt-4 bg-primary text-white py-2 px-4 rounded-lg"
+            onclick="closeModal('modal6')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <section id="about" class="pt-20 pb-10 bg-slate-700">
+      <div class="container">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold text-primary text-xl mb-3 uppercase">
+              Objective.G
+            </h4>
+            <p class="text-slate-500 text-semibold max-w-md justify-end">
+              if you like have some suggest or idea, just tell me in email.
+              <span class="block font-bold">gilangsadewa600@gmail.com</span>
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h2 class="font-bold text-primary text-xl mb-3 uppercase">
+              Contact Me
+            </h2>
+            <p class="text-slate-500 text-semibold max-w-md justify-end">
+              Let's connect with me more deep.
+            </p>
+            <div class="flex items-center mt-4">
+              <!-- Social Media Links -->
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=gilangsadewa600@gmail.com"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/gilang-dwi-probowiyanto-62649524b/"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.546C0 23.226.792 24 1.771 24h20.451c.978 0 1.777-.774 1.777-1.727V1.727C24 .774 23.203 0 22.225 0z"
+                  /></svg
+              ></a>
+              <a
+                href="https://github.com/gilsa9090?tab=repositories"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.809 1.304 3.495.997.107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.467-2.382 1.235-3.221-.135-.304-.54-1.527.105-3.176 0 0 1.005-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.28-1.552 3.282-1.23 3.282-1.23.653 1.649.24 2.872.117 3.176.765.839 1.231 1.911 1.231 3.221 0 4.609-2.807 5.62-5.479 5.914.43.372.823 1.096.823 2.213 0 1.597-.015 2.884-.015 3.276 0 .322.216.698.825.578C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/gilsa.7/"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  /></svg
+              ></a>
+              <a
+                href="https://wa.me/6287824786327"
+                target="blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center border border-slate-400 text-slate-400 hover:bg-primary hover:border-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Footer-->
+  </body>
+  <script>
+    document.getElementById("navbar-toggle").onclick = function () {
+      const menu = document.getElementById("navbar-menu");
+      menu.classList.toggle("hidden");
+    };
+
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove("hidden");
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add("hidden");
+    }
+  </script>
+</html>
